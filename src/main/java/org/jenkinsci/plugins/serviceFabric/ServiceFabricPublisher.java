@@ -45,7 +45,6 @@ public class ServiceFabricPublisher extends Recorder {
     private final String manifestPath;
     private final String clientKey;
     private final String clientCert;
-    private final String caChain;
     
     public String appUpgradeCheck;
     public String deployType;
@@ -53,7 +52,7 @@ public class ServiceFabricPublisher extends Recorder {
     // Fields in config.jelly must match the parameter names in the "DataBoundConstructor"
     @DataBoundConstructor
     public ServiceFabricPublisher(String name, String clusterType, String clusterPublicIP, String applicationName,
-            String applicationType, String manifestPath, String clientKey, String clientCert, String caChain) {
+            String applicationType, String manifestPath, String clientKey, String clientCert) {
 
         this.name = name;
         this.clusterType = clusterType;
@@ -63,7 +62,6 @@ public class ServiceFabricPublisher extends Recorder {
         this.manifestPath = manifestPath;
         this.clientKey = clientKey;
         this.clientCert = clientCert;
-        this.caChain = caChain;
     }
 
     /**
@@ -99,10 +97,6 @@ public class ServiceFabricPublisher extends Recorder {
 
     public String getClientCert(){
         return clientCert;
-    }
-
-    public String getCaChain(){
-        return caChain;
     }
     
     // public String getDeployType(){
@@ -142,7 +136,7 @@ public class ServiceFabricPublisher extends Recorder {
 
 
         // use the parameters to construct the commands
-        SFCommandBuilder commandBuilder = new SFCommandBuilder(applicationName, applicationType, clusterPublicIP, manifestPath, clientKey, clientCert, caChain, build.getProject().getName());
+        SFCommandBuilder commandBuilder = new SFCommandBuilder(applicationName, applicationType, clusterPublicIP, manifestPath, clientKey, clientCert, build.getProject().getName());
         String commandString = commandBuilder.buildCommands(); 
 
         Shell command = new Shell(commandString);

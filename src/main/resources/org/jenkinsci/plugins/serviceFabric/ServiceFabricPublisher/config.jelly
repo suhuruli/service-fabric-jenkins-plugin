@@ -39,9 +39,6 @@
             <f:entry title="Client Cert (Secure only):" field="clientCert">
                 <f:textbox name="clientCert" value="${it.clientCert}"/>
             </f:entry>
-            <f:entry title="Ca-Chain (Secure Only):" field="caChain">
-                <f:textbox name="caChain" value="${it.caChain}"/>
-            </f:entry>
         </table>
     </f:block>
 </j:jelly>
