@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  ~ Copyright (c) Microsoft Corporation. All rights reserved.
+
+  ~ Licensed under the MIT License. See LICENSE in the project root for
+
+  ~ license information.
+
+  -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -11,12 +20,12 @@
     <relativePath/>
   </parent>
   <groupId>org.jenkinsci.plugins</groupId>
-  <artifactId>serviceFabric</artifactId>
+  <artifactId>azure-service-fabric</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
-  <name>ServiceFabricPlugin</name>
-  <description>serviceFabric</description>
+  <name>Service Fabric Jenkins Plugin</name>
+  <description>Plugin for deploying service fabric applications.</description>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
   <licenses>
     <license>
@@ -43,6 +52,13 @@
       <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
+  <developers>
+      <developer>
+          <id>azure_sf</id>
+          <name>ServiceFabric Maintainer</name>
+          <email>sfmaint@microsoft.com</email>
+      </developer>
+  </developers>
   <!-- If you want to depend on other plugins:
   <dependencies>
     <dependency>
@@ -52,5 +68,4 @@
     </dependency>
   </dependencies>
   -->
-
 </project>
