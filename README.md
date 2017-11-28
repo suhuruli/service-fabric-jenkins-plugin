@@ -1,3 +1,5 @@
+# service-fabric-jenkins-plugin
+> Jenkins Plugin for Linux Azure Service Fabric projects
 ## Installation
 You can install/update this plugin in Jenkins update center (Manage Jenkins -> Manage Plugins, search Service Fabric Jenkins Plugin).
 
@@ -14,7 +16,7 @@ To manually install the plugin:
 5. Restart your Jenkins instance after installation is completed.
 
 ## Usage
-You can have a look at our [documentation](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cicd-your-linux-applications-with-jenkins) to understand more about building and deploying Service Fabric applications using Jenkins.
+You can have a look at our [documentation](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cicd-your-linux-applications-with-jenkins) to understand more about building and deploying Linux Service Fabric applications using Jenkins.
 
 ## License
 
