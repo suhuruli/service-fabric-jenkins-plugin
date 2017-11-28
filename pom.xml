@@ -55,8 +55,8 @@
   <developers>
       <developer>
           <id>azure_sf</id>
-          <name>Azure Service Fabric Team</name>
-          <email>rapatchi@microsoft.com</email>
+          <name>ServiceFabric Maintainer</name>
+          <email>sfmaint@microsoft.com</email>
       </developer>
   </developers>
   <!-- If you want to depend on other plugins:

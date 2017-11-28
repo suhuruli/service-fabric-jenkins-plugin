@@ -18,11 +18,6 @@ To manually install the plugin:
 ## Usage
 You can have a look at our [documentation](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cicd-your-linux-applications-with-jenkins) to understand more about building and deploying Linux Service Fabric applications using Jenkins.
 
-## License
-
-MIT
-Copyright (c) Microsoft Corporation. All rights reserved.
-
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
