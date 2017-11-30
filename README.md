@@ -1,5 +1,8 @@
 # service-fabric-jenkins-plugin
 > Jenkins Plugin for Linux Azure Service Fabric projects
+
+This repository is deprecated. Please find the latest information [here] (https://github.com/jenkinsci/service-fabric-plugin)
+
 ## Installation
 You can install/update this plugin in Jenkins update center (Manage Jenkins -> Manage Plugins, search Service Fabric Jenkins Plugin).
 
